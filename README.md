@@ -16,6 +16,12 @@ geoviz -f *.geojson
 geoviz -t wkt.svg -f *.wkt
 # reads contents of files as geojson or wkt based off file extension
 ```
+
+```
+# pipe output to automagically open 
+geoviz -f -t ./examples/mixed.svg  ./examples/* | xargs code --reuse-window --goto
+```
+
 where <WKT> is a valid WKT string.
 
 ##
