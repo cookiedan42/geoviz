@@ -1,0 +1,18 @@
+[project]
+name = "geoviz"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.2.1",
+    "matplotlib>=3.10.5",
+    "shapely>=2.1.1",
+]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { file = "src/**/*.py" }]
+
+[project.scripts]
+geoviz = "geoviz.cli:main"
+
